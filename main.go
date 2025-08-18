@@ -27,7 +27,7 @@ func main() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webzila Test Site</title>
+    <title>Webzila Test Site II</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -85,14 +85,14 @@ func main() {
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Webzila Test Website</h1>
+        <h1>🚀 Webzila Test Website II</h1>
         <div class="badge">Auto-Deployed via GitHub Webhook</div>
         
         <div class="info">
             <p>This is a simple Go Fiber web application deployed automatically by Webzila.</p>
             <p><strong>Domain:</strong> web1.zfus.net</p>
             <p><strong>Deployment:</strong> Automatic via GitHub push</p>
-            <p><strong>Version:</strong> 1.1.0 - Updated!</p>
+            <p><strong>Version:</strong> 1.2.0 - Title Update!</p>
         </div>
 
         <div class="tech-stack">
@@ -116,16 +116,16 @@ func main() {
 		return c.JSON(fiber.Map{
 			"status":  "healthy",
 			"service": "webzila-test-website",
-			"version": "1.1.0",
+			"version": "1.2.0",
 		})
 	})
 
 	// API endpoint
 	app.Get("/api/info", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"name":        "Webzila Test Website",
-			"version":     "1.1.0",
-			"description": "Updated Go Fiber app for testing auto-deployment",
+			"name":        "Webzila Test Website II",
+			"version":     "1.2.0",
+			"description": "Title updated Go Fiber app for testing auto-deployment",
 			"technology":  []string{"Go", "Fiber", "Docker", "Webzila"},
 		})
 	})
