@@ -92,7 +92,7 @@ func main() {
             <p>This is a simple Go Fiber web application deployed automatically by Webzila.</p>
             <p><strong>Domain:</strong> web1.zfus.net</p>
             <p><strong>Deployment:</strong> Automatic via GitHub push</p>
-            <p><strong>Version:</strong> 1.0.0</p>
+            <p><strong>Version:</strong> 1.1.0 - Updated!</p>
         </div>
 
         <div class="tech-stack">
@@ -116,7 +116,7 @@ func main() {
 		return c.JSON(fiber.Map{
 			"status":  "healthy",
 			"service": "webzila-test-website",
-			"version": "1.0.0",
+			"version": "1.1.0",
 		})
 	})
 
@@ -124,8 +124,8 @@ func main() {
 	app.Get("/api/info", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
 			"name":        "Webzila Test Website",
-			"version":     "1.0.0",
-			"description": "Simple Go Fiber app for testing auto-deployment",
+			"version":     "1.1.0",
+			"description": "Updated Go Fiber app for testing auto-deployment",
 			"technology":  []string{"Go", "Fiber", "Docker", "Webzila"},
 		})
 	})
